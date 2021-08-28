@@ -1,0 +1,160 @@
+Java Introduction(JDK,JRE,JVM)
+Primitive DataTypes = byte, short, int, long, float, double, boolean, char.
+Non Primitive DataTypes = String, array, class.
+Token = Keywords, Identifiers, Constant, Special Symbols, Operators.
+Datatype Conversion = Implicit Datatype Conversion, Explicit Datatype Conversion.
+Package = Package is a folder which contains related classes
+Array
+
+Arithmetic Operator(+,-,/,*,%)
+Unary Operator = increment, decrement (++,--,!,+,-)
+Comparison Operator = (==,!=,<,>,<=,>=)
+Logical Operator = && , ||
+Bitwise (Ignore)
+
+
+NIf Else Statement
+Ternary operator
+Nested If
+Switch
+One Dimension Array ([])
+Two Dimension Array ([][])
+do While
+while
+for Loop
+Enhanced ForLoop = used in Arrays
+Nested For Loop
+
+Collections:
+            1.ArrayList.
+            2.LinkedList = add, addFirst, addLast, remove, removeFirst, removeLast.
+            3.HashSet = no duplicates random access element collection list (if you run the hashset again and again you can see different orders).
+            4.TreeSet = no duplicates and natural order of sequence ( a-z ) like sorting.
+            5.Map = "Key" are unique and stored in "Set" class because "Set" class does not allow duplicates.
+                    "value" can be duplicates and are stored in "list" class.
+            6.HashMap = (key, value) called "Entry"
+            Eg: Map.Entry<Integer, String> b : has.entrySet()
+                b.getKey(), b.getValue()
+            7.TreeMap = (key, value) called "Entry"
+                        Eg: Map.Entry<Integer, String> b : has.entrySet()
+                            b.getKey(), b.getValue()
+                            = natural sorting order i.e (a-z)(0-9).
+
+            8.Stack = LIFO
+                    = push is to used to insert element.
+                    = pop is to used to take element out of the stack.
+                    = peep is to used to view not to remove.
+
+            9.Queue = FIFO ( 1st element = Head || Last element = Tail)
+                    = add
+                    = remove = can only remove the element
+                    = peek
+                    = poll = remove the element and return the element (see the head and remove the head)
+
+Class = class is a blueprint which is required to create an object and its logical entity.
+Constructor = A Constructor is a special kind of method.
+
+31-07-2021
+Access Modifiers = Public       (Class, Package, SubClass, World (outside the Package)).
+                   Protected    (Class, Package, SubClass(of SuperClass of same Package)).
+                   Default      (Class, Package).   (No Modifier)
+                   Private      (Class).
+
+Inheritance (IS-A relation)=
+              SubClass extends SuperClass
+              ChildClass extends ParentClass
+              DerivedClass extends BaseClass
+
+Encapsulation:
+                private attributes / properties/ variables (to hide properties from the world)
+
+Abstraction = 1) abstract class should have at least one abstract method.
+              2) can have normal class
+              3)It cannot be instantiated and cannot have default constructor
+              3)But when Child class extends Parent class then Child class constructor can invoke Parent class constructor indirectly.
+              Parent child                              = new Child();
+              reference of Parent abstract class        //concrete class object
+              child.name();                             //method from child class will be called
+
+Interface = 1.Can have Constants(public static final).
+            2.Total Abstract.
+            3.Only declare methods but not implement
+            4.Subclass implements SuperClass
+            5.Override means SubClass method is overriding the SuperClass method
+            6.Interface can instantiate with Anonymous Class.
+
+Multiple Inheritance:
+            1.Multiple Inheritance is not supported in Java using Classes.
+            2.Multiple Inheritance is supported in Java using Interfaces.
+            3.{
+                Implement
+               }
+
+Method OverLoading :
+            1.Name of the method should be same.
+            2.No of Parameters can change.
+            3.Parameter Datatype can change.
+
+MethodOverRiding :
+            1.MethodOverRiding is used with the help of Inheritance.
+            2.Instance method / Instance variable belongs to object.
+            3.Static method / Static variable belongs to class.
+            4.Static method are called by Class
+            5.Static method cannot be overRide.
+            Eg : className.StaticMethodName.
+            Eg : className.StaticVariableName.
+
+Static = 1.Static method / Static variable belongs to class.
+         2.Static method are called by Class.
+         3.Static method cannot be overRide.
+         4.Static method can access only static member
+         5.Instance method can access static member.
+         6.Static variable is executed only once.
+
+Static Nested Class = OuterClass.StaticInnerClass innerClass = new OuterClass.StaticInnerClass();
+Inner Classes       = OuterClass1.InnerClass in = new OuterClass1().new InnerClass();
+Anonymous Class
+Package
+Recursion = Factorial (4! = 4*3*2*1 = 24)
+          = Define base condition
+
+Throwable is the parent class of all Exceptions and Errors.
+
+Exception = means which can be handled by the Developer.
+            1. IO-Exception (occurs during File writing and reading)
+            2. SQL-Exception (occurs during talking to the database, writting SQL queries)
+            3. ClassNotFound (when class is not found in the runtime)
+
+Runtime Exception = because you find it during Runtime.
+                    1. Arithmetic Exception (100/0).
+                    2. NullPointerException (String a = null sout(a.charAt(0)))
+
+Error = which is not the responsibility of the developer and developer can do nothing.
+throws Arithmetic Exception, NullPointerException.
+
+Try Catch = 1.We can rethrow exception from catch block using (throw e) keyword.
+            2.try/catch, try/catch/finally, try/finally(can write without catch block).
+            3.catch(ArithmeticException | IndexOutOfBoundsException) we can write two exception in one catch block.
+**Nested Try Catch.
+**Object class is the super class of any class we create in JAVA.
+
+Enum  = 1.Enum is total Constant.
+        2.Initialize enum (Enum e = Enum.Day)
+
+Annotation = Annotation is described with ("@") symbol.
+             2.@Override = annotation name override.
+             3.@SuppressWarnings.
+
+Threads and Process:  1.Threads are called as lightweight Processes
+                      2.Process can have multiple Threads.
+                      3.Threads exist within Process
+
+                      1.extend Thread => override run method
+                      2.implements Runnable.
+
+                      Thread myThread = new Thread();
+                      myThread.start();
+
+                      Thread.sleep();
+
+Autoboxing : Converting int to Integer(Object Wrapper Class)

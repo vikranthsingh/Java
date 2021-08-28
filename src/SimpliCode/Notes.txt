@@ -1,0 +1,2 @@
+Garbage Collector
+"new" keyword is used to initialize anything in java and also to create any object.
