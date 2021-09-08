@@ -157,4 +157,19 @@ Threads and Process:  1.Threads are called as lightweight Processes
 
                       Thread.sleep();
 
-Autoboxing : Converting int to Integer(Object Wrapper Class)
+Auto Boxing      : Converting int(primitive datatype) to Integer(Object Wrapper Class).
+Auto Unboxing    : Converting Integer(Object Wrapper Class) to int(primitive datatype).
+
+String : String is immutable(String once created cannot be changed/overwritten).
+        .length()
+        .concat()
+        .format(%s is for string, %d is for int, %f for float)
+        .charAt()
+        .equals()
+        .index()
+        .replace()
+        .lastIndexOf()
+        .subString(1, 5) to trim the part of the String.
+         charAt 1 is included but charAt 5 is not
+
+Generics : public class MyClass<T>{} //T is the default standard
