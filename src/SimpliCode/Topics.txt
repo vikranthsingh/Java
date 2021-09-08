@@ -1,19 +1,28 @@
 Java Introduction(JDK,JRE,JVM)
-Primitive DataTypes = byte, short, int, long, float, double, boolean, char.
-Non Primitive DataTypes = String, array, class.
-Token = Keywords, Identifiers, Constant, Special Symbols, Operators.
-Datatype Conversion = Implicit Datatype Conversion, Explicit Datatype Conversion.
-Package = Package is a folder which contains related classes
-Array
+1.Introduction, 2&3 installation.
+4.Primitive DataTypes = byte, short, int, long, float, double, boolean, char.
+5.NonPrimitive DataTypes = String, array, class.
+6.Token = pre_defined Keywords, Identifiers, Constant, Special Symbols, Operators.
+7.Datatype Conversion = Implicit Datatype Conversion, Explicit Datatype Conversion.
+8.Package = Package is a folder which contains related classes
+            SupperClass = java.lang.Object Class.
+            System is a Class;
+            out,in,err = output stream
+            println(), print(), printf() = method
+9.Array = Array is a collection of sequence of elements.
+          index(length-1);
+10.Arithmetic Operator(+,-,/,*,%)
 
-Arithmetic Operator(+,-,/,*,%)
+
+Assignment Operator (=)
 Unary Operator = increment, decrement (++,--,!,+,-)
 Comparison Operator = (==,!=,<,>,<=,>=)
 Logical Operator = && , ||
+
 Bitwise (Ignore)
 
 
-NIf Else Statement
+If Else Statement
 Ternary operator
 Nested If
 Switch
@@ -161,6 +170,7 @@ Auto Boxing      : Converting int(primitive datatype) to Integer(Object Wrapper 
 Auto Unboxing    : Converting Integer(Object Wrapper Class) to int(primitive datatype).
 
 String : String is immutable(String once created cannot be changed/overwritten).
+         String is a Special kind of Datatype.
         .length()
         .concat()
         .format(%s is for string, %d is for int, %f for float)

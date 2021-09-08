@@ -10,8 +10,10 @@ public class DataTypeConversion_7 {
         //explicit datatype casting/conversion
         double d = 50.50;
         float f = (float) d; //first typecast to double value to float
+        long l1 = (long) d;
         int i = (int) f;
         System.out.println("the value of float is: "+f);
         System.out.println("the value of int is: "+i);
+        System.out.println("the value of long is: "+l1);
     }
 }

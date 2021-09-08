@@ -3,6 +3,7 @@ package SimpliCode;
 public class JavaArray {
     public static void main(String[] args) {
         int[] a = {1,2,3};
+
         //System.out.println(a[1]);
         //One Dimension Array
         int[] arr = new int[4];
