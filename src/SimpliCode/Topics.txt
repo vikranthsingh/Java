@@ -11,20 +11,17 @@ Java Introduction(JDK,JRE,JVM)
             println(), print(), printf() = method
 9.Array = Array is a collection of sequence of elements.
           index(length-1);
-10.Arithmetic Operator(+,-,/,*,%)
-
-
+10.Arithmetic Operator(+,-,/,*,%) (a+b) used with 2 variables
+11.Unary Operator = increment, decrement (++,--,!,+,-) (+1 used with 1 variables)
+12. 1)Comparison Operator = (==,!=,<,>,<=,>=)
+    2)Logical Operator = (&& , ||) OR (AND , ||)
 Assignment Operator (=)
-Unary Operator = increment, decrement (++,--,!,+,-)
-Comparison Operator = (==,!=,<,>,<=,>=)
-Logical Operator = && , ||
+13.Bitwise (Ignore)
+14.If Else Statement
+15. 1)Nested If (If inside If)
+    2)Ternary operator (condition ? true : false) only if you one statement
 
-Bitwise (Ignore)
 
-
-If Else Statement
-Ternary operator
-Nested If
 Switch
 One Dimension Array ([])
 Two Dimension Array ([][])

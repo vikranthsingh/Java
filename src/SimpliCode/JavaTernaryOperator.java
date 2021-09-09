@@ -2,8 +2,9 @@ package SimpliCode;
 
 public class JavaTernaryOperator {
     public static void main(String[] args) {
-        double a = 11.59;
-        String wish = a < 12 ? "Good morning" : "Good afternoon";
-        System.out.println(wish);
+        int a = 1;
+        int b = 2;
+        int r = a < b ? a : b;
+        System.out.println(r);
     }
 }
