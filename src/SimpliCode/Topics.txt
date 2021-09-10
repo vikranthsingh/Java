@@ -20,13 +20,18 @@ Assignment Operator (=)
 14.If Else Statement
 15. 1)Nested If (If inside If)
     2)Ternary operator (condition ? true : false) only if you one statement
+16.Switch Statement.
+17. 2D Array ([][])     x-y axis
+    1D Array ([])       x-axis
+18. 3D Array ([][][])   x-y-z axis
+
+*** new keyword is used to initialize anything in Java***
+
+19.do While Loop
+20.while Loop
 
 
-Switch
-One Dimension Array ([])
-Two Dimension Array ([][])
-do While
-while
+
 for Loop
 Enhanced ForLoop = used in Arrays
 Nested For Loop
