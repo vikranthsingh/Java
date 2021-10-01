@@ -29,7 +29,20 @@ enum Weekend{
         return value;
     }
 }
+enum Months{
+    JAN("red"),
+    FEB("black"),
+    MAR("Yellow");
+    private String value;
 
+    Months(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
+}
 public class JavaEnum {
     public static void main(String[] args) {
         Days d = Days.MON;
@@ -39,5 +52,9 @@ public class JavaEnum {
         Weekend weekend = Weekend.SUNDAY;
         System.out.println(weekend.getValue());
         System.out.println(weekend.name());
+
+        Months months = Months.JAN;
+        System.out.println(months.getValue());
+        System.out.println(months.name());
     }
 }
