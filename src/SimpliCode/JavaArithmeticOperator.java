@@ -2,12 +2,19 @@ package SimpliCode;
 
 public class JavaArithmeticOperator {
     public static void main(String[] args) {
-        int a = 1;
-        int b = 2;
-        System.out.println(a+b);
-        System.out.println(b-a);
-        System.out.println(b/a);
-        System.out.println(a*b);
-        System.out.println(a%b);
+        int result = 1 + 2;
+        System.out.println(result);
+
+        result = result -1;
+        System.out.println(result);
+
+        result = result * 2;
+        System.out.println(result);
+
+        result = result / 2;
+        System.out.println(result);
+
+        result = result % 3;
+        System.out.println(result);
     }
 }

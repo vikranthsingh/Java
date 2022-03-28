@@ -1,18 +1,57 @@
-Java Introduction(JDK,JRE,JVM)
-1.Introduction, 2&3 installation.
+1.Java Introduction(JDK,JRE,JVM)
+
+Java was created in 1991 but was released in 1995, and it was developed by James Gosling at Sun MicroSystems and later acquired by Oracle.
+    *** Usage: Mobile Application, Web Application, Desktop Application, Gaming Application.
+    *** Features :
+                    1.Object-Oriented.          (everything happens in java happens around object)
+                    2.Platform Independent.
+                    3.Strong Type-Checking.
+                    4.Compile & Interpret
+                    5.Garbage collector         (it removes unused variables and objects from memory)
+                    6.Multi-threading           (OS ==> Processor ==> Threads)
+                    7.Secure                    (doesn't have pointers which leads to memory leakage like C and C++)
+                    8.Robust
+
+                   Java Source Code ==> Java Compiler ==> Java Byte Code ==> Java Interpreter ==> Machine Code
+                        .java             Compilation         .class            Interpret           Output
+
+    *** Java Compiler      = Java compiler compiles the Java source code into the Java bytecode.
+    *** Java Interpreter   = Java interpreter converts or translates the bytecode into the machine-understandable format i.e. machine code.
+
+JDK (Java Development Kit)
+    JRE (Java Runtime Environment)
+        JVM (Java Virtual Machine), Class Libraries, Other Libraries.
+
+2&3 installation.
+
 4.Primitive DataTypes = byte, short, int, long, float, double, boolean, char.
+                        ** Primitive DataTypes are supported by Java
 5.NonPrimitive DataTypes = String, array, class.
+                        ** String is a collection of continuous sequence of Characters of same data type.
+                        ** String and Arrays are immutable
+                        ** Custom in nature
+                        ** Array Exception = ArrayIndexOutOfBound
+
 6.Token = pre_defined Keywords, Identifiers, Constant, Special Symbols, Operators.
-7.Datatype Conversion = Implicit Datatype Conversion, Explicit Datatype Conversion.
-8.Package = Package is a folder which contains related classes
-            SupperClass = java.lang.Object Class.
+
+7.Datatype Casting / Conversion =
+                                1.Implicit Datatype casting/conversion, small ==> large ==> largest
+                                2.Explicit Datatype casting/conversion. small <== large <== largest
+
+8.Package = Package is a folder which contains related files
+            SupperClass = java.lang.Object.
             System is a Class;
-            out,in,err = output stream
+            out,in,err = stream
             println(), print(), printf() = method
         *** new keyword is used to initialize anything in Java***
-9.Array = Array is a collection of sequence of elements.
-          index(length-1);
-10.Arithmetic Operator(+,-,/,*,%) (a+b) used with 2 variables
+
+9.Array =   Array is a collection of continuous sequence of Elements of same data type.
+            Array is immutable
+            index(length-1);
+            Array Exception = ArrayIndexOutOfBound
+
+10.Arithmetic Operator(+,-,/,*,%)
+
 11.Unary Operator = increment, decrement (++,--,!,+,-) (+1 used with 1 variables)
 12. 1)Comparison Operator = (==,!=,<,>,<=,>=)
     2)Logical Operator = (&& , ||) OR (AND , ||)

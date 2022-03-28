@@ -25,5 +25,12 @@ public class Java1DArray {
             }
             System.out.println();
         }
+
+        int[] a1;
+        a1 = new int[3];
+        int[] b = new int[3];
+        b[0] = 1;
+        b[1] = 2;
+        int[] c = {1,2,3};
     }
 }
