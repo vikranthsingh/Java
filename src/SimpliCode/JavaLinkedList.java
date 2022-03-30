@@ -36,22 +36,32 @@ public class JavaLinkedList {
         l.removeLast();
         System.out.println(l);*/
 
-        LinkedList<String> link = new LinkedList<>();
-        link.add("i");
-        link.add("k");
-        link.add("e");
-        link.addFirst("V");
-        link.addLast("y");
-        link.add(2, "K");
-        link.remove("K"); //remove object
-        link.remove(3);
-        link.removeFirst();
-        link.removeLast();
-        link.remove(1);
-        for (String a : link
-             ) {
-            System.out.println(a);
-        }
+        /*LinkedList<String> name = new LinkedList<>();
+        name.add("i");
+        name.add("k");
+        System.out.println(name);
 
+        name.addFirst("V");
+        System.out.println(name);
+
+        name.add(3, "e");
+        name.addLast("y");
+        System.out.println(name);
+        System.out.println(name.indexOf("k"));
+
+        name.removeFirst();
+        name.remove("i");
+        name.remove(2);
+        name.remove("k");
+        name.removeLast();
+        System.out.println(name);*/
+
+        LinkedList<Integer> num = new LinkedList<>();
+        num.add(1);
+        num.add(2);
+        num.add(4);
+        System.out.println(num.get(2));
+        num.add(2, 3);
+        System.out.println(num.get(2));
     }
 }

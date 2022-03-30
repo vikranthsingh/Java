@@ -2,24 +2,16 @@ package SimpliCode;
 
 public class JavaSwitch {
     public static void main(String[] args) {
-        int month = 5;
-        String name;
+        int month = 1; //Constant
+        char day = 0;
         switch (month) {
             case 1:
-                name = "Jan";
+                day = 'M';
                 break;
             case 2:
-                name = "Feb";
+                day = 'T';
                 break;
-            case 3:
-                name = "Mar";
-                break;
-            case 4:
-                name = "Apri";
-                break;
-            default:
-                name = "Invalid Month";
         }
-        System.out.println(name);
+        System.out.println("Day " + day);
     }
 }

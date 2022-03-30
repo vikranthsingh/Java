@@ -50,15 +50,23 @@ JDK (Java Development Kit)
             index(length-1);
             Array Exception = ArrayIndexOutOfBound
 
+*** Operators ***
+
 10.Arithmetic Operator(+,-,/,*,%)
 
 11.Unary Operator = increment, decrement (++,--,!,+,-) (+1 used with 1 variables)
-12. 1)Comparison Operator = (==,!=,<,>,<=,>=)
+
+12. 1)Comparison/Relational Operator = (==,!=,<,>,<=,>=)
+    *** if(Comparison/Relational Operator){}
     2)Logical Operator = (&& , ||) OR (AND , ||)
+
 Assignment Operator (=)
 13.Bitwise (Ignore)
+
+*** Statements ***
+
 14.If Else Statement
-15. 1)Nested If (If inside If)
+15. 1)Nested If (If inside If) next block is dependent on previous block
     2)Ternary operator (condition ? true : false) only if you one statement
 16.Switch Statement.
 17. 2D Array ([][])     x-y axis
@@ -68,17 +76,28 @@ Assignment Operator (=)
 ***Loop***
 
 19.do While Loop
-20.while Loop
-21.for Loop
+20.while Loop       while(boolean)
+21.for Loop (iterate)
 22.Enhanced ForLoop (used in Arrays, List, Map)
 23.Nested For Loop
 
 24 & 25.Collections:
-            1.ArrayList.
-            2.LinkedList = add, addFirst, addLast, remove, removeFirst, removeLast.
-            3.HashSet = no duplicates random access element collection list (if you run the hashset again and again you can see different orders).
-            4.TreeSet = no duplicates and natural order of sequence ( a-z ) like sorting.
-            5.Map = "Key" are unique and stored in "Set" class because "Set" class does not allow duplicates.
+Set = unique
+list = duplicate, index.
+Map<key, value>
+
+Queue = FIFO
+Stack = LIFO
+
+            26.ArrayList.
+            List<String> name = new Arraylist<>();
+              Interface           class
+            Exception = IndexOutOfBoundsException
+
+            27.LinkedList = add, addFirst, addLast, remove, removeFirst, removeLast.
+            28.HashSet = no duplicates random access element collection list (if you run the hashset again and again you can see different orders).
+            29.TreeSet = no duplicates and natural order of sequence ( a-z ) like sorting.
+            30.Map = "Key" are unique and stored as "Set" class because "Set" class does not allow duplicates.
                     "value" can be duplicates and are stored in "list" class.
             6.HashMap = (key, value) called "Entry"
             Eg: Map.Entry<Integer, String> b : has.entrySet()

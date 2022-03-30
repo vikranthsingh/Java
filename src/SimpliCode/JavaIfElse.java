@@ -3,14 +3,17 @@ package SimpliCode;
 public class JavaIfElse {
     public static void main(String[] args) {
         int marks = 69;
+        char a;
         if (marks >= 90){
-            System.out.println("A");
+            a = 'A';
         }else if (marks >= 80){
-            System.out.println("B");
+            a = 'B';
         }else if (marks >= 70){
-            System.out.println("C");
+            a = 'C';
         }else {
-            System.out.println("Fail");
+            a = 'F';
         }
+        System.out.println("Grade " + a);
+
     }
 }

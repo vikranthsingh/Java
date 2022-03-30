@@ -40,5 +40,7 @@ public class JavaPractice {
         int b = sc.nextInt();
         Calculator calc = new Calculator();
         calc.cal(a, b);
+
+        int a1 = 0;
     }
 }
