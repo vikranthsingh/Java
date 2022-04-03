@@ -118,8 +118,12 @@ Stack = LIFO
                     = peek
                     = poll = remove the element and return the element (see the head and remove the head)
 
-Class = class is a blueprint which is required to create an object and its logical entity.
-Constructor = A Constructor is a special kind of method.
+35.Class = class is a blueprint which is required to create an object and its logical entity.
+36.Constructor = A Constructor is a special kind of method.
+37.Streams =         List<Integer> str = num.stream().map(x -> x*x).collect(Collectors.toList());
+                  List<Integer> add = num.stream().map(x->x+x).collect(Collectors.toList());
+                  //collect(Collectors.toList()); to convert stream to list
+                  //map(x->x+x) formula
 
 31-07-2021
 Access Modifiers = Public       (Class, Package, SubClass, World (outside the Package)).
