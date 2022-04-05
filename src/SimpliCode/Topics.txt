@@ -82,9 +82,9 @@ Assignment Operator (=)
 23.Nested For Loop
 
 24 & 25.Collections:
-Set = unique
-list = duplicate, index.
-Map<key, value>
+Set = unique             = add
+list = duplicate, index. = add
+Map<key, value>          = put
 
 Queue = FIFO
 Stack = LIFO
@@ -95,24 +95,37 @@ Stack = LIFO
             Exception = IndexOutOfBoundsException
 
             27.LinkedList = add, addFirst, addLast, remove, removeFirst, removeLast.
-            28.HashSet = no duplicates random access element collection list (if you run the hashset again and again you can see different orders).
+            28.HashSet = no duplicates random access element collection list (if you run the hashset again and again you can see different orders). stored in random order
             29.TreeSet = no duplicates and natural order of sequence ( a-z ) like sorting.
             30.Map = "Key" are unique and stored as "Set" class because "Set" class does not allow duplicates.
                     "value" can be duplicates and are stored in "list" class.
-            6.HashMap = (key, value) called "Entry"
+            31.HashMap = (key, value) called "Entry"
+                        stored in random order.
+                        containsKey();
+                        for (String keys : details.keySet()
+                                     ) {
+                                    System.out.println("key: "+ keys + " " + "\tValue: " + details.get(keys));
+                                }
+
+                        for (Map.Entry<String, String> dkeys:details.entrySet()
+                                     ) {
+                                    System.out.println("key: "+ dkeys.getKey() + " " + "\tValue: " + dkeys.getValue());
+                                }
             Eg: Map.Entry<Integer, String> b : has.entrySet()
                 b.getKey(), b.getValue()
-            7.TreeMap = (key, value) called "Entry"
+            32.TreeMap = (key, value) called "Entry"
+                        sorting is only performed on keys but not on values.
                         Eg: Map.Entry<Integer, String> b : has.entrySet()
                             b.getKey(), b.getValue()
                             = natural sorting order i.e (a-z)(0-9).
+                            = only keys are sorted
 
-            8.Stack = LIFO
+            33.Stack = LIFO
                     = push is to used to insert element.
                     = pop is to used to take element out of the stack.
                     = peep is to used to view not to remove.
 
-            9.Queue = FIFO ( 1st element = Head || Last element = Tail)
+            34.Queue = FIFO ( 1st element = Head || Last element = Tail)
                     = add
                     = remove = can only remove the element
                     = peek
@@ -125,48 +138,60 @@ Stack = LIFO
                   //collect(Collectors.toList()); to convert stream to list
                   //map(x->x+x) formula
 
-31-07-2021
-Access Modifiers = Public       (Class, Package, SubClass, World (outside the Package)).
-                   Protected    (Class, Package, SubClass(of SuperClass of same Package)).
-                   Default      (Class, Package).   (No Modifier)
-                   Private      (Class).
+38.Streams Filter = collect(Collectors.toSet()); //to convert stream to set
+            List<String> filterResults = languages.stream().filter(x->x.startsWith("P")).collect(Collectors.toList());
+39.sorted For Each = languages.stream().forEach(y-> System.out.println(y));
+40.
+41.Stream Reduce :  Identity     = an element that is the initial value of the reduction operation and default result if the stream is empty.
+                    Accumulator = a function that takes two parameters,
+                    a partial result of the reduction operation and the next element of the stream.
+                    Combiner    = a function uded to combine the partial result of the reduction operation when the reduction is parallelized
+            int sum = numList.stream().reduce(0,(ans,i)->ans+i);
 
-Inheritance (IS-A relation)=
+42.Access Modifiers =  Public       (Class, Package, SubClass, World (outside the Package)).
+                       Protected    (Class, Package, SubClass(of SuperClass of same Package)).
+                       Default      (Class, Package).   (No Modifier)
+                       Private      (Class).
+
+43.Inheritance (IS-A relation)=
+***     Super keyword has to be first statement in constructor.
               SubClass extends SuperClass
               ChildClass extends ParentClass
               DerivedClass extends BaseClass
 
-Encapsulation:
+44.Encapsulation: To hide the properties of a class from other class.
                 private attributes / properties/ variables (to hide properties from the world)
 
-Abstraction = 1) abstract class should have at least one abstract method.
+45.Abstraction =
+              1) abstract class should have at least one abstract method.
               2) can have normal class
               3)It cannot be instantiated and cannot have default constructor
               3)But when Child class extends Parent class then Child class constructor can invoke Parent class constructor indirectly.
               Parent child                              = new Child();
               reference of Parent abstract class        //concrete class object
-              child.name();                             //method from child class will be called
+              child.name();                            //method from child class will be called
+Reference can be abstract class;
 
-Interface = 1.Can have Constants(public static final).
+46.Interface = 1.Can have only Constants(public static final).
             2.Total Abstract.
             3.Only declare methods but not implement
             4.Subclass implements SuperClass
             5.Override means SubClass method is overriding the SuperClass method
             6.Interface can instantiate with Anonymous Class.
+Reference can be Interface;
 
-Multiple Inheritance:
+47.Multiple Inheritance:
             1.Multiple Inheritance is not supported in Java using Classes.
             2.Multiple Inheritance is supported in Java using Interfaces.
-            3.{
-                Implement
-               }
+            3.In multiple inheritance of interface
+            Reference should be class
 
-Method OverLoading :
+48.Method OverLoading :
             1.Name of the method should be same.
             2.No of Parameters can change.
             3.Parameter Datatype can change.
 
-MethodOverRiding :
+MethodOverRiding:
             1.MethodOverRiding is used with the help of Inheritance.
             2.Instance method / Instance variable belongs to object.
             3.Static method / Static variable belongs to class.

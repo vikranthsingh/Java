@@ -1,25 +1,72 @@
 package SimpliCode;
 
-class ParentClass {
-  protected int age;
-  protected String name;
+class Bicycle {
+    private int gear;
+    private int speed;
 
-    public ParentClass(int age, String name) {
-        this.age = age;
-        this.name = name;
+    public Bicycle(int gear, int speed) {
+        this.gear = gear;
+        this.speed = speed;
+    }
+
+    public void bicycleName() {
+        System.out.println("Lady Bird");
+    }
+
+    public int reduceSpeed(int speed) {
+        return this.speed -= speed;
+    }
+
+    public int increaseGear(int gear) {
+        return this.gear += 5;
+    }
+
+    public int getGear() {
+        return gear;
+    }
+
+    public void setGear(int gear) {
+        this.gear = gear;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 }
-class ChildClass extends ParentClass{
 
-    public ChildClass(int age, String name) {
-        super(age, name);
+class MountainBicycle extends Bicycle {
+    private int seatHeight;
+
+    public MountainBicycle(int gear, int speed, int seatHeight) {
+        super(gear, speed);
+        this.seatHeight = seatHeight;
+    }
+
+    public int getSeatHeight() {
+        return seatHeight;
+    }
+
+    @Override
+    public void bicycleName() {
+        super.bicycleName();
+        System.out.println("Hercules");
     }
 }
+
 public class JavaInheritance {
     public static void main(String[] args) {
-        ParentClass parentClass = new ParentClass(64, "Cp Singh");
-        System.out.println(parentClass.name);
-        ChildClass childClass = new ChildClass(27, "Vikranth");
-        System.out.println(childClass.name);
+        MountainBicycle mountainBicycle = new MountainBicycle(27, 28, 15);
+        System.out.println(mountainBicycle.getSeatHeight());
+        System.out.println(mountainBicycle.getGear());
+        System.out.println(mountainBicycle.getSpeed());
+        mountainBicycle.bicycleName();
+        int speed = mountainBicycle.reduceSpeed(10);
+        System.out.println(speed);
+        int gear = mountainBicycle.increaseGear(5);
+        System.out.println("increase gear by " + gear);
     }
 }

@@ -1,8 +1,8 @@
 package SimpliCode;
 
 class Student{
-    private String name;
-    private int age;
+   String name;
+   int age;
 
     public Student(String name, int age) {
         this.name = name;
@@ -13,12 +13,12 @@ class Student{
         return name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public void setAge(int age) {
@@ -27,9 +27,9 @@ class Student{
 }
 public class JavaEncapsulation {
     public static void main(String[] args) {
-        Student student = new Student("Vikranth", 27);
-        System.out.println(student.getName());
-        student.setName("Vikranth singh");
-        System.out.println(student.getName());
+       Student student1 = new Student("vikranth singh", 29);
+       student1.setName("Vik");
+        System.out.println(student1.getName());
+        System.out.println(student1.getAge());
     }
 }
