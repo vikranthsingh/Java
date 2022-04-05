@@ -186,12 +186,19 @@ Reference can be Interface;
             3.In multiple inheritance of interface
             Reference should be class
 
+Polymorphism
 48.Method OverLoading :
             1.Name of the method should be same.
             2.No of Parameters can change.
             3.Parameter Datatype can change.
 
-MethodOverRiding:
+49.MethodOverRiding:
+        *** Instance method belongs to object
+        *** static method belongs to class.
+        *** SuperClass Static Method to SubClass Instance Method = error;
+        *** SuperClass Instance Method to Subclass static Method = error;
+        *** SuperClass Static Method to Subclass static Method   = Hides
+
             1.MethodOverRiding is used with the help of Inheritance.
             2.Instance method / Instance variable belongs to object.
             3.Static method / Static variable belongs to class.
@@ -200,12 +207,13 @@ MethodOverRiding:
             Eg : className.StaticMethodName.
             Eg : className.StaticVariableName.
 
-Static = 1.Static method / Static variable belongs to class.
+50.Static = 1.Static method / Static variable belongs to class.
          2.Static method are called by Class.
          3.Static method cannot be overRide.
          4.Static method can access only static member
          5.Instance method can access static member.
          6.Static variable is executed only once.
+         7.Static method can access only static member variable
 
 Static Nested Class = OuterClass.StaticInnerClass innerClass = new OuterClass.StaticInnerClass();
 Inner Classes       = OuterClass1.InnerClass in = new OuterClass1().new InnerClass();
