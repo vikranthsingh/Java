@@ -215,15 +215,28 @@ Polymorphism
          6.Static variable is executed only once.
          7.Static method can access only static member variable
 
-Static Nested Class = OuterClass.StaticInnerClass innerClass = new OuterClass.StaticInnerClass();
-Inner Classes       = OuterClass1.InnerClass in = new OuterClass1().new InnerClass();
-Anonymous Class
-Package
-Recursion = Factorial (4! = 4*3*2*1 = 24)
-          = Define base condition
+51.Static Nested Class = Static method / block will accept only static member variable;
+                         Static Nested classes and Non-Static Nested class/InnerClass.
+                       = OuterClass.StaticInnerClass innerClass = new OuterClass.StaticInnerClass();
 
-Throwable is the parent class of all Exceptions and Errors.
+52.Non-Static Nested class / Inner Classes  = instance variable and static variable are accepted inside InnerClass.
+                                    OuterClass1.InnerClass in = new OuterClass1().new InnerClass();
 
+ *** Anonymous InnerClass is instantiation of Interface
+
+53.Package = Package is a folder in a file directory which contains same related files to avoid name conflicts
+54.Recursion = Method calling Method
+                Factorial (4! = 4*3*2*1 = 24)
+                = Define base condition
+55.Calling Method = return should be your last execution step of your method
+
+56.Throwable is the parent class of all Exceptions          Errors.
+ checked Exceptions                     IO Exception        JVM Error
+                                        SQL Exception       Memory
+                                        ClassNotFound       Framework
+                                        Runtime/ Un-checked Exceptions
+                                            Arithmetic
+                                            NumberFormat
 Exception = means which can be handled by the Developer.
             1. IO-Exception (occurs during File writing and reading)
             2. SQL-Exception (occurs during talking to the database, writting SQL queries)
