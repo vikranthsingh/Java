@@ -231,25 +231,25 @@ Polymorphism
 55.Calling Method = return should be your last execution step of your method
 
 56.Throwable is the parent class of all Exceptions          Errors.
- checked Exceptions                     IO Exception        JVM Error
+ checked Exceptions/Compile Time        IO Exception        JVM Error
                                         SQL Exception       Memory
                                         ClassNotFound       Framework
                                         Runtime/ Un-checked Exceptions
                                             Arithmetic
                                             NumberFormat
-Exception = means which can be handled by the Developer.
+Checked Exceptions/Compile Time Exceptions= means which can be handled by the Developer.
             1. IO-Exception (occurs during File writing and reading)
             2. SQL-Exception (occurs during talking to the database, writting SQL queries)
             3. ClassNotFound (when class is not found in the runtime)
 
-Runtime Exception = because you find it during Runtime.
+Runtime Exception / Un-checked Exceptions = because you find it during Runtime.
                     1. Arithmetic Exception (100/0).
                     2. NullPointerException (String a = null sout(a.charAt(0)))
 
 Error = which is not the responsibility of the developer and developer can do nothing.
 throws Arithmetic Exception, NullPointerException.
 
-Try Catch = 1.We can rethrow exception from catch block using (throw e) keyword.
+57.Try Catch = 1.We can rethrow exception from catch block using (throw e) keyword.
             2.try/catch, try/catch/finally, try/finally(can write without catch block).
             3.catch(ArithmeticException | IndexOutOfBoundsException) we can write two exception in one catch block.
 **Nested Try Catch.

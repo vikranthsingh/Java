@@ -18,7 +18,7 @@ public class JavaTryCatch {
             System.out.println("IndexOutOfBoundsException : " + e1.getMessage());
         } finally {
             System.out.println("This is Executed");
-        }*/
+        }
 
         //
         try {
@@ -38,6 +38,25 @@ public class JavaTryCatch {
             System.out.println("ArrayIndexOutOfBoundsException");
         } finally {
             System.out.println("Executed");
+        }*/
+        try {
+            try {
+                try {
+                    int[] a = {1, 2, 3};
+                    System.out.println(a[3]);
+                } catch (ArithmeticException i) {
+                    System.out.println("ArithmeticException");
+                    throw i;
+                }
+            } catch (ArrayIndexOutOfBoundsException a) {
+                System.out.println("ArrayIndexOutOfBoundsException");
+                throw a;
+            }
+        } catch (ArrayIndexOutOfBoundsException i) {
+            System.out.println("ArrayIndexOutOfBoundsException");
+            throw i;
+        } finally {
+            System.out.println("Finished");
         }
     }
 }
