@@ -253,24 +253,26 @@ throws Arithmetic Exception, NullPointerException.
             2.try/catch, try/catch/finally, try/finally(can write without catch block).
             3.catch(ArithmeticException | IndexOutOfBoundsException) we can write two exception in one catch block.
 **Nested Try Catch.
-**Object class is the super class of any class we create in JAVA.
 
-Enum  = 1.Enum is total Constant.
+58.Hashcode = Object class is the super class of any class we create in JAVA.
+63.Enum  = 1.Enum is total Constant.
         2.Initialize enum (Enum e = Enum.Day)
 
-Annotation = Annotation is described with ("@") symbol.
+64.Annotation = Annotation is described with ("@") symbol.
              2.@Override = annotation name override.
              3.@SuppressWarnings.
-
-Threads and Process:  1.Threads are called as lightweight Processes
+65.Serializable = serialize an object means to covert its state to a byte stream
+66.Threads and Processes:  1.Threads are called as lightweight Processes
                       2.Process can have multiple Threads.
                       3.Threads exist within Process
 
                       1.extend Thread => override run method
                       2.implements Runnable.
 
-                      Thread myThread = new Thread();
+                      MyThread myThread = new MyThread();
+                      Thread thread = new Thread(new yourThread());
                       myThread.start();
+                      thread.start();
 
                       Thread.sleep();
 

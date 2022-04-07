@@ -1,5 +1,6 @@
 package SimpliCode;
 
+/*
 enum Days {
     MON("red"),
     TUE("black"),
@@ -42,12 +43,43 @@ enum Months{
     public String getValue() {
         return value;
     }
+}*/
+enum ModuleType {
+    VG("0"), VT("1"), CSP("2");
+    private String value;
+
+    ModuleType(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }
+
 public class JavaEnum {
     public static void main(String[] args) {
-        Days d = Days.MON;
-//        System.out.println(d.name());
-//        System.out.println(d.getValue());
+        ModuleType vg = ModuleType.VG;
+        ModuleType vt = ModuleType.VT;
+        ModuleType csp = ModuleType.CSP;
+
+        System.out.println(vg.name());
+        System.out.println(vg.getValue());
+
+        System.out.println(vt.name());
+        System.out.println(vt.getValue());
+
+        System.out.println(csp.name());
+        System.out.println(csp.getValue());
+
+        for (ModuleType type : ModuleType.values()
+             ) {
+            System.out.println(type.name() + " " + type.getValue());
+        }
+
+        /*Days d = Days.MON;
+        System.out.println(d.name());
+        System.out.println(d.getValue());
 
         Weekend weekend = Weekend.SUNDAY;
         System.out.println(weekend.getValue());
@@ -55,6 +87,6 @@ public class JavaEnum {
 
         Months months = Months.JAN;
         System.out.println(months.getValue());
-        System.out.println(months.name());
+        System.out.println(months.name());*/
     }
 }
