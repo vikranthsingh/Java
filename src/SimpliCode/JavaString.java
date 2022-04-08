@@ -16,5 +16,6 @@ public class JavaString {
         System.out.println(string.str1.replace('i', 'I'));
         System.out.println(string.str1.lastIndexOf('g')); //could find 'g' so it -1
         System.out.println(string.str1.substring(0, 3));
+        System.out.format("My name is %s and im am %d of age","vikranth",29);
     }
 }

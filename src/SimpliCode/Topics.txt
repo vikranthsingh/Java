@@ -276,10 +276,14 @@ throws Arithmetic Exception, NullPointerException.
 
                       Thread.sleep();
 
-Auto Boxing      : Converting int(primitive datatype) to Integer(Object Wrapper Class).
-Auto Unboxing    : Converting Integer(Object Wrapper Class) to int(primitive datatype).
-
-String : String is immutable(String once created cannot be changed/overwritten).
+68. Auto Boxing      : Converting int(primitive datatype) to Integer(Object Wrapper Class).
+    Auto Unboxing    : Converting Integer(Object Wrapper Class) to int(primitive datatype).
+    Integer i1 = Integer.valueOf(i); //converting primitive datatype to Object Wrapper Class
+    //Auto_UnBox
+            int i3 = i1;
+69.IO Streams :
+71.Generics : public class MyClass<T>{} //T is the default standard
+73.String : String is immutable(String once created cannot be changed/overwritten).
          String is a Special kind of Datatype.
         .length()
         .concat()
@@ -291,5 +295,3 @@ String : String is immutable(String once created cannot be changed/overwritten).
         .lastIndexOf()
         .subString(1, 5) to trim the part of the String.
          charAt 1 is included but charAt 5 is not
-
-Generics : public class MyClass<T>{} //T is the default standard

@@ -42,6 +42,11 @@ public class JavaPractice1 {
         System.out.println(vik.getName());
         changeName(vik);
         System.out.println(vik.getName());
+        int[] sum = {1,2,3,4,5};
+        for (int s : sum
+             ) {
+            System.out.println(s+1);
+        }
     }
     public static void changeName(Student student){
         student.setName("VikranthSingh");
