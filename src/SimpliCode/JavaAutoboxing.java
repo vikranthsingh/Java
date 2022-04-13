@@ -25,5 +25,13 @@ public class JavaAutoboxing {
         char ch = 'c';
         Character character = Character.valueOf(ch);
         System.out.println(character);
+
+        double ans = 10.01;
+        Double doAns = Double.valueOf(ans);
+        System.out.println(doAns);
+
+        float a = 10.005f;
+        Float f = Float.valueOf(a);
+        System.out.println(f);
     }
 }

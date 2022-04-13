@@ -123,7 +123,7 @@ Stack = LIFO
             33.Stack = LIFO
                     = push is to used to insert element.
                     = pop is to used to take element out of the stack.
-                    = peep is to used to view not to remove.
+                    = peek is to used to view not to remove.
 
             34.Queue = FIFO ( 1st element = Head || Last element = Tail)
                     = add
@@ -261,7 +261,8 @@ throws Arithmetic Exception, NullPointerException.
 64.Annotation = Annotation is described with ("@") symbol.
              2.@Override = annotation name override.
              3.@SuppressWarnings.
-65.Serializable = serialize an object means to covert its state to a byte stream
+65. Serialization = The process of converting an Object to Byte so it can be send over a network called serialization.
+    Deserialization = the process of converting back the Byte from network to Java Object is called Deserialization.
 66.Threads and Processes:  1.Threads are called as lightweight Processes
                       2.Process can have multiple Threads.
                       3.Threads exist within Process
