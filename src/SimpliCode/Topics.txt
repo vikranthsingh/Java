@@ -195,6 +195,7 @@ Polymorphism
 49.MethodOverRiding:
         *** Instance method belongs to object
         *** static method belongs to class.
+        *** SuperClass instance Method to SubClass Instance Method = Override.
         *** SuperClass Static Method to SubClass Instance Method = error;
         *** SuperClass Instance Method to Subclass static Method = error;
         *** SuperClass Static Method to Subclass static Method   = Hides
@@ -210,18 +211,28 @@ Polymorphism
 50.Static = 1.Static method / Static variable belongs to class.
          2.Static method are called by Class.
          3.Static method cannot be overRide.
-         4.Static method can access only static member
+         4.Static method can access only static member variable
          5.Instance method can access static member.
          6.Static variable is executed only once.
-         7.Static method can access only static member variable
+
 
 51.Static Nested Class = Static method / block will accept only static member variable;
                          Static Nested classes and Non-Static Nested class/InnerClass.
                        = OuterClass.StaticInnerClass innerClass = new OuterClass.StaticInnerClass();
-
-52.Non-Static Nested class / Inner Classes  = instance variable and static variable are accepted inside InnerClass.
+            class OuterClass {
+            ...
+                static class InnerClass    {
+                ...
+                    }
+            }
+52.Inner Classes / Non-Static Nested class   = instance variable and static variable are accepted inside InnerClass.
                                     OuterClass1.InnerClass in = new OuterClass1().new InnerClass();
-
+            class OuterClass {
+                        ...
+                            class InnerClass    {
+                            ...
+                                }
+                        }
  *** Anonymous InnerClass is instantiation of Interface
 
 53.Package = Package is a folder in a file directory which contains same related files to avoid name conflicts
@@ -266,7 +277,10 @@ throws Arithmetic Exception, NullPointerException.
 66.Threads and Processes:  1.Threads are called as lightweight Processes
                       2.Process can have multiple Threads.
                       3.Threads exist within Process
-
+Thread Stages = New
+                Runnable        Dead
+                Running
+                Blocked
                       1.extend Thread => override run method
                       2.implements Runnable.
 
@@ -276,13 +290,20 @@ throws Arithmetic Exception, NullPointerException.
                       thread.start();
 
                       Thread.sleep();
+67.Synchronization and Intrinsic Locks/monitor lock: when a Thread tries to work on a particular object it basically take a lock on that object and that means that particular object becomes completely inaccessible to other Threads at that particular time.
+                If a method/block is synchronized than only one thread can execute that method and once the execution of that thread is finished than next thread will start execution.
+                synchronized void getMultiple(int n) //synchronized method
+                        synchronized (this)          //synchronized block
 
 68. Auto Boxing      : Converting int(primitive datatype) to Integer(Object Wrapper Class).
     Auto Unboxing    : Converting Integer(Object Wrapper Class) to int(primitive datatype).
     Integer i1 = Integer.valueOf(i); //converting primitive datatype to Object Wrapper Class
     //Auto_UnBox
             int i3 = i1;
-69.IO Streams :
+69.I/O Streams :
+                1.Input Stream  = Input Stream is to read data from a source.
+                2.Output Stream = Output Stream is to write data to a destination.
+70.JDBC :
 71.Generics : public class MyClass<T>{} //T is the default standard
 73.String : String is immutable(String once created cannot be changed/overwritten).
          String is a Special kind of Datatype.
