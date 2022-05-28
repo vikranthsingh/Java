@@ -10,7 +10,7 @@ Java was created in 1991 but was released in 1995, and it was developed by James
                     5.Garbage collector         (it removes unused variables and objects from memory)
                     6.Multi-threading           (OS ==> Processor ==> Threads)
                     7.Secure                    (doesn't have pointers which leads to memory leakage like C and C++)
-                    8.Robust
+                    8.Robust                    (provide exception)
 
                    Java Source Code ==> Java Compiler ==> Java Byte Code ==> Java Interpreter ==> Machine Code
                         .java             Compilation         .class            Interpret           Output
@@ -32,7 +32,7 @@ JDK (Java Development Kit)
                         ** Custom in nature
                         ** Array Exception = ArrayIndexOutOfBound
 
-6.Token = pre_defined Keywords, Identifiers, Constant, Special Symbols, Operators.
+6.Token = pre_defined Keywords, Identifiers(variable name), Constant(final variable), Special Symbols( [], (), {},  =, *, ;), Operators.
 
 7.Datatype Casting / Conversion =
                                 1.Implicit Datatype casting/conversion, small ==> large ==> largest
@@ -162,7 +162,7 @@ Stack = LIFO
 44.Encapsulation: To hide the properties of a class from other class.
                 private attributes / properties/ variables (to hide properties from the world)
 
-45.Abstraction =
+45.Abstraction = we show only the relevant parts to the user and hide all the internal details from the user
               1) abstract class should have at least one abstract method.
               2) can have normal class
               3)It cannot be instantiated and cannot have default constructor
