@@ -238,7 +238,14 @@ Polymorphism
 53.Package = Package is a folder in a file directory which contains same related files to avoid name conflicts
 54.Recursion = Method calling Method
                 Factorial (4! = 4*3*2*1 = 24)
-                = Define base condition
+             ***Define base condition
+            int cal(int n) {
+                    if (n == 1) {       //base condition
+                        return 1;
+                    } else {
+                        return (n * cal(n - 1));        //(cal(n - 1) factorial of any no.
+                    }
+                }
 55.Calling Method = return should be your last execution step of your method
 
 56.Throwable is the parent class of all Exceptions          Errors.
@@ -250,7 +257,7 @@ Polymorphism
                                             NumberFormat
 Checked Exceptions/Compile Time Exceptions= means which can be handled by the Developer.
             1. IO-Exception (occurs during File writing and reading)
-            2. SQL-Exception (occurs during talking to the database, writting SQL queries)
+            2. SQL-Exception (occurs during talking to the database, writing SQL queries)
             3. ClassNotFound (when class is not found in the runtime)
 
 Runtime Exception / Un-checked Exceptions = because you find it during Runtime.
@@ -265,7 +272,7 @@ throws Arithmetic Exception, NullPointerException.
             3.catch(ArithmeticException | IndexOutOfBoundsException) we can write two exception in one catch block.
 **Nested Try Catch.
 
-58.Hashcode = Object class is the super class of any class we create in JAVA.
+58.Hashcode = Object class is the super class of any class we create in JAVA. Every class is inherited by Object Class
 63.Enum  = 1.Enum is total Constant.
         2.Initialize enum (Enum e = Enum.Day)
 
@@ -274,6 +281,8 @@ throws Arithmetic Exception, NullPointerException.
              3.@SuppressWarnings.
 65. Serialization = The process of converting an Object to Byte so it can be send over a network called serialization.
     Deserialization = the process of converting back the Byte from network to Java Object is called Deserialization.
+    Transient variable = if you do not want to serialize the variable;
+    Eg: transient int x;
 66.Threads and Processes:  1.Threads are called as lightweight Processes
                       2.Process can have multiple Threads.
                       3.Threads exist within Process
@@ -303,6 +312,8 @@ Thread Stages = New
 69.I/O Streams :
                 1.Input Stream  = Input Stream is to read data from a source.
                 2.Output Stream = Output Stream is to write data to a destination.
+                FileOutputStream and FileInputStream are used in case of Byte
+                FileReader and FileWriter is used in case of char
 70.JDBC :
 71.Generics : public class MyClass<T>{} //T is the default standard
 73.String : String is immutable(String once created cannot be changed/overwritten).
