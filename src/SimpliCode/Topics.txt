@@ -9,7 +9,7 @@ Java was created in 1991 but was released in 1995, and it was developed by James
                     4.Compile & Interpret
                     5.Garbage collector         (it removes unused variables and objects from memory)
                     6.Multi-threading           (OS ==> Processor ==> Threads)
-                    7.Secure                    (doesn't have pointers which leads to memory leakage like C and C++)
+                    7.Secure                    (doesn't  have pointers which leads to memory leakage like C and C++)
                     8.Robust                    (provide exception)
 
                    Java Source Code ==> Java Compiler ==> Java Byte Code ==> Java Interpreter ==> Machine Code
@@ -55,26 +55,27 @@ JDK (Java Development Kit)
 10.Arithmetic Operator(+,-,/,*,%)
 
 11.Unary Operator = increment, decrement (++,--,!,+,-) (+1 used with 1 variables)
-
+                    + in unary is used for single variable
+                    + in arithmetic operator used for two variable
 12. 1)Comparison/Relational Operator = (==,!=,<,>,<=,>=)
     *** if(Comparison/Relational Operator){}
-    2)Logical Operator = (&& , ||) OR (AND , ||)
+    2)Logical Operator = (&& , ||) or (AND , OR)
 
 Assignment Operator (=)
 13.Bitwise (Ignore)
 
 *** Statements ***
 
-14.If Else Statement
+14.If Else Statement        if(True/False){}
 15. 1)Nested If (If inside If) next block is dependent on previous block
-    2)Ternary operator (condition ? true : false) only if you one statement
+    2)Ternary operator (condition ? true : false) only if you one statement in If and else block
 16.Switch Statement.
 17. 2D Array ([][])     x-y axis
     1D Array ([])       x-axis
 18. 3D Array ([][][])   x-y-z axis
+** new keyword is used to initialize anything in java
 
 ***Loop***
-
 19.do While Loop
 20.while Loop       while(boolean)
 21.for Loop (iterate)
@@ -93,12 +94,17 @@ Stack = LIFO
             List<String> name = new Arraylist<>();
               Interface           class
             Exception = IndexOutOfBoundsException
+            ** Elements can be accessed randomly
 
             27.LinkedList = add, addFirst, addLast, remove, removeFirst, removeLast.
+            In LinkedList we cannot randomly access elements
+            Eg: If we want to access 5th element in 10 size list, then it will start from 1st element to 5th element
+
             28.HashSet = no duplicates random access element collection list (if you run the hashset again and again you can see different orders). stored in random order
             29.TreeSet = no duplicates and natural order of sequence ( a-z ) like sorting.
             30.Map = "Key" are unique and stored as "Set" class because "Set" class does not allow duplicates.
                     "value" can be duplicates and are stored in "list" class.
+                    sorting is done on key
             31.HashMap = (key, value) called "Entry"
                         stored in random order.
                         containsKey();
@@ -131,16 +137,23 @@ Stack = LIFO
                     = peek
                     = poll = remove the element and return the element (see the head and remove the head)
 
-35.Class = class is a blueprint which is required to create an object and its logical entity.
+35.Class = class is a blueprint which is required to create an object.
+           Class is a logical entity.
+           Class has attributes/properties (instance variable)
+           Class has behaviour  (Method).
 36.Constructor = A Constructor is a special kind of method.
-37.Streams =         List<Integer> str = num.stream().map(x -> x*x).collect(Collectors.toList());
+37.Streams =      List<Integer> str = num.stream().map(x -> x*x).collect(Collectors.toList());
+                                        num.stream() = converts list into streams
                   List<Integer> add = num.stream().map(x->x+x).collect(Collectors.toList());
-                  //collect(Collectors.toList()); to convert stream to list
-                  //map(x->x+x) formula
+                                        //collect(Collectors.toList()); to convert stream back to list
+                                        //map(x->x+x) formula
 
 38.Streams Filter = collect(Collectors.toSet()); //to convert stream to set
             List<String> filterResults = languages.stream().filter(x->x.startsWith("P")).collect(Collectors.toList());
+            filter() can be used for condition.
 39.sorted For Each = languages.stream().forEach(y-> System.out.println(y));
+                     //below code is to sort the list in natural sort of manner
+                     List<String> sortedList = langList.stream().sorted().collect(Collectors.toList());
 40.
 41.Stream Reduce :  Identity     = an element that is the initial value of the reduction operation and default result if the stream is empty.
                     Accumulator = a function that takes two parameters,
@@ -164,7 +177,7 @@ Stack = LIFO
 
 45.Abstraction = we show only the relevant parts to the user and hide all the internal details from the user
               1) abstract class should have at least one abstract method.
-              2) can have normal class
+              2) Abstract class can have instance variable.
               3)It cannot be instantiated and cannot have default constructor
               3)But when Child class extends Parent class then Child class constructor can invoke Parent class constructor indirectly.
               Parent child                              = new Child();
@@ -178,6 +191,8 @@ Reference can be abstract class;
             4.Subclass implements SuperClass
             5.Override means SubClass method is overriding the SuperClass method
             6.Interface can instantiate with Anonymous Class.
+            7.It can have default and static methods and nested type
+            8.In Child class constructor you dont get Super because interface does  not have a constructor
 Reference can be Interface;
 
 47.Multiple Inheritance:
@@ -193,6 +208,7 @@ Polymorphism
             3.Parameter Datatype can change.
 
 49.MethodOverRiding:
+        *** MethodOverRiding is only possible with Inheritance
         *** Instance method belongs to object
         *** static method belongs to class.
         *** SuperClass instance Method to SubClass Instance Method = Override.
@@ -208,7 +224,8 @@ Polymorphism
             Eg : className.StaticMethodName.
             Eg : className.StaticVariableName.
 
-50.Static = 1.Static method / Static variable belongs to class.
+50.Static = Constant (public static final String COLLEGE_NAME = "AU";)
+         1.Static method / Static variable belongs to class.
          2.Static method are called by Class.
          3.Static method cannot be overRide.
          4.Static method can access only static member variable
@@ -236,6 +253,7 @@ Polymorphism
  *** Anonymous InnerClass is instantiation of Interface
 
 53.Package = Package is a folder in a file directory which contains same related files to avoid name conflicts
+            Eg: test.java.tutorials
 54.Recursion = Method calling Method
                 Factorial (4! = 4*3*2*1 = 24)
              ***Define base condition
