@@ -1,0 +1,47 @@
+Durga Software Solutions
+
+Module 1 = 	1)Data Hiding
+			2)Abstraction
+			3)Encapsulation
+			4)Tightly Encapsulated class
+
+Module 2	5)IS-A relationship(Inheritance)
+			6)HAS-A relationship
+			7)Method signature
+			8)Overloading
+			9)Over-riding
+			10)Static control flow
+			11)Instance control flow
+			12)Constructors
+			13)Coupling
+			14)Cohesion
+			15)Type-casting
+
+
+
+
+1)Data Hiding = Outside person cant access our internal data directly or our internal data should not go out directly is called as Data Hiding. After validation or authentication outside person can access out internal data
+Eg: After providing proper username and password we can access out gmail inbox information
+**declaring data member(variable) as private is highly recommended is Data Hiding
+Advantage = 1) security
+
+2)Abstraction(ATM) =	Hidding internal implementation and highlight set of services we are offering is a concept of Abstraction.
+Eg: Through bank ATM GUI screen bank is offering set of services without highlighting internal implementation
+Advantage = 1) security
+
+3)Encapsulation(Capsule) = The process of binding data and corresponding methods into a single unit is Encapsulation
+Encapsulation = data members + methods
+Encapsulation = Data Hiding + Abstraction
+Advantage = 1) security
+
+4)Tightly Encapsulated = A Class is said to be tightly encapsulated if and only if each and very variable declared as private whether class contains corresponding getters and setters method or not and whether method are declared as public or not this things we are not required to check
+Note : If the parent class is not tightly encapsulated then no child class is tightly encapsulated
+
+
+
+
+********************************************* Module 2 *********************************************
+
+5)IS-A relationship(Inheritance) = 	1)It is also known as Inheritance
+									2) advantage = code re-usability
+									3) By using extends keyword we can implement IS-A relationship

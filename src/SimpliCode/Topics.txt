@@ -315,8 +315,8 @@ Thread Stages = New
                       Thread thread = new Thread(new yourThread());
                       myThread.start();
                       thread.start();
-
                       Thread.sleep();
+
 67.Synchronization and Intrinsic Locks/monitor lock: when a Thread tries to work on a particular object it basically take a lock on that object and that means that particular object becomes completely inaccessible to other Threads at that particular time.
                 If a method/block is synchronized than only one thread can execute that method and once the execution of that thread is finished than next thread will start execution.
                 synchronized void getMultiple(int n) //synchronized method
@@ -346,3 +346,8 @@ Thread Stages = New
         .lastIndexOf()
         .subString(1, 5) to trim the part of the String.
          charAt 1 is included but charAt 5 is not
+
+
+Random Number = Random random = new Random();
+                int number-random.nextInt(bound:20) + 1;
+                System.out.println("number:"+number);
